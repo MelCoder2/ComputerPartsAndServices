@@ -454,13 +454,13 @@ class UserView(QMainWindow):
         t_layout = QVBoxLayout()
 
         title = QLabel("Customer Dashboard")
-        title.setStyleSheet("font-size: 30px; font-weight: bold; color: #1e293b;")
+        title.setStyleSheet("font-size: 30px; font-weight: bold; color: #1e293b; background: none;")
 
         sub = QLabel("Purchase Premium Computer Parts & Professional Services")
-        sub.setStyleSheet("font-size: 16px; color: #64748b;")
+        sub.setStyleSheet("font-size: 16px; color: #64748b; background: none;")
 
         contact = QLabel("📧 melcomshopandservices@gmail.com   |   📞 (0912) 345-6789")
-        contact.setStyleSheet("font-size: 14px; color: #009688; font-weight: bold;")
+        contact.setStyleSheet("font-size: 14px; color: #009688; font-weight: bold; background: none;")
 
         t_layout.addWidget(title)
         t_layout.addWidget(sub)
@@ -1326,3 +1326,4 @@ class UserView(QMainWindow):
             self.controller.cancel_booking(sid)
 
             self.refresh_my_bookings()
+
