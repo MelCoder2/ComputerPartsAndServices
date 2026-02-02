@@ -225,9 +225,9 @@ class ManagerView(QMainWindow):
         top = QHBoxLayout()
         tl = QVBoxLayout()
         t = QLabel("Manager Dashboard")
-        t.setStyleSheet("font-size: 30px; font-weight: bold; color: #1e293b;")
+        t.setStyleSheet("font-size: 30px; font-weight: bold; color: #1e293b; background: none;")
         s = QLabel("Manage inventory & services.")
-        s.setStyleSheet("color: #64748b; font-size: 20px;")
+        s.setStyleSheet("color: #64748b; font-size: 20px; background: none;")
         tl.addWidget(t)
         tl.addWidget(s)
 
@@ -1566,4 +1566,5 @@ class ManagerView(QMainWindow):
                 self.hist_t.setItem(r, 5, make_item(str(start)))
 
         except Exception as e:
+
             print("History Error:", e)
