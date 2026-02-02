@@ -1084,7 +1084,7 @@ class UserView(QMainWindow):
                         }
                     """)
 
-                    btn_add = QPushButton("Add to Cart")
+                    btn_add = QPushButton("➕ Add to Cart")
                     btn_add.setFixedWidth(110)
                     btn_add.setFixedHeight(34)
                     btn_add.setCursor(Qt.CursorShape.PointingHandCursor)
@@ -1324,4 +1324,5 @@ class UserView(QMainWindow):
     def on_cancel_booking_clicked(self, sid):
         if QMessageBox.question(self, "Cancel", "Cancel this appointment?") == QMessageBox.StandardButton.Yes:
             self.controller.cancel_booking(sid)
+
             self.refresh_my_bookings()
